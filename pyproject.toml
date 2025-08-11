@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cleanly"
+version = "0.1.0"
+description = "LLM-powered data cleaning toolkit"
+authors = [
+    { name = "Abdullah Musharaf", email = "abdullahmusharaf200@gmail.com" }
+]
+dependencies = [
+    "pandas",
+]
+
+[tool.setuptools.packages.find]
+where = ["cleanly"]
