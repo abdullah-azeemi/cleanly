@@ -17,6 +17,6 @@ def parse_cleaning_instructions(instruction: str):
   if encode_match:
     column = encode_match.group(1)
     method = encode_match.group(2) if encode_match.group(2) else "label"
-    steps.append({"action": "encode_column", "column": column, "method": method})
+    steps.append({"action": "encode_columns", "column": column, "method": method})
       
   return steps
